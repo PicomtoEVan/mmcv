@@ -385,7 +385,7 @@ class Pad(BaseTransform):
         results['pad_shape'] = padded_img.shape
         results['pad_fixed_size'] = self.size
         results['pad_size_divisor'] = self.size_divisor
-        results['img_shape'] = padded_img.shape[:2]
+        #results['img_shape'] = padded_img.shape[:2]
 
     def _pad_seg(self, results: dict) -> None:
         """Pad semantic segmentation map according to
